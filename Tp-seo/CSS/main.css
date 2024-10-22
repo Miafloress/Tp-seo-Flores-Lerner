@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.video{
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+
+
+.buscador-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 178, 171, 0.39);
+    margin-top: 5%;
+    border-radius: 20px;
+    height: 250px;
+}
+
+.buscar{
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 30px;
+}
+
+.buscador-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    height: 50px;
+}
+
+.buscador-boton {
+    margin-top: 2%;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:lightseagreen ;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 2s;
+}
+
+.buscador-boton:hover {
+    background-color: rgb(17, 90, 86);
+}
+
+
