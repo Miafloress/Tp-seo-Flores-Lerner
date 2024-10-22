@@ -13,8 +13,6 @@ main{
     border-radius: 20px;
 }
 
-
-
 .buscador-container {
     display: flex;
     flex-direction: column;
@@ -56,6 +54,7 @@ main{
 .buscador-boton:hover {
     background-color: rgb(25, 133, 127);
 }
+
 
 @keyframes show{
     from{
