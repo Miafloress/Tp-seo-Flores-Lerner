@@ -13,14 +13,12 @@ main{
     border-radius: 20px;
 }
 
-
-
 .buscador-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(32, 178, 171, 0.39);
+    background-color: rgba(24, 146, 140, 0.507);
     margin-top: 5%;
     border-radius: 20px;
     height: 250px;
@@ -30,7 +28,7 @@ main{
     color: white;
     margin-bottom: 2%;
     margin-top: 2%;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .buscador-input {
@@ -54,6 +52,6 @@ main{
 }
 
 .buscador-boton:hover {
-    background-color: rgb(17, 90, 86);
+    background-color: rgb(25, 133, 127);
 }
 
