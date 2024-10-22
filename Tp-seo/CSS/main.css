@@ -20,7 +20,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(32, 178, 171, 0.39);
+    background-color: rgba(24, 146, 140, 0.507);
     margin-top: 5%;
     border-radius: 20px;
     height: 250px;
@@ -30,7 +30,7 @@ main{
     color: white;
     margin-bottom: 2%;
     margin-top: 2%;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .buscador-input {
@@ -54,7 +54,80 @@ main{
 }
 
 .buscador-boton:hover {
-    background-color: rgb(17, 90, 86);
+    background-color: rgb(25, 133, 127);
 }
 
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
 
+iframe{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+.conteiner-ipad{
+    margin-top: 5%;
+    background-image: url(../assets/img/ft-ipads.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.conteiner-ipad h4{
+    color: rgb(215, 185, 242);
+    margin-top: 4%;
+    font-size: 30px;
+}
+
+.conteiner-ipad h5{
+    margin-top: 0.5%;
+    color: rgb(215, 189, 237);
+    font-size: 20px;
+}
+
+.conteiner-ipad button{
+    margin-top: 1%;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:rgb(215, 185, 242);
+}
+
+.conteiner-ipad button a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-carrusel{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-carrusel h5{
+    color: lightseagreen;
+    font-size: 30px;
+}
