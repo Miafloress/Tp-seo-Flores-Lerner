@@ -35,10 +35,11 @@
               <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Donde comprar</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit" style="border-color: lightseagreen; background-color: lightseagreen; color: white;">Search</button>
-          </form>
+          <div id="icono-boostrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </div>
         </div>
       </div>
     </nav>
@@ -99,11 +100,117 @@
           allowfullscreen>
         </iframe>
       </div>
-      <div class="buscador-container">
-        <h5 class="buscar">Buscar más temas</h5>
-          <input type="text" placeholder="Buscar..." class="buscador-input">
-          <button class="buscador-boton">Buscar</button>
+    </div>
+  </main>
+
+  <nav class="padding">    
+    <div class="line"></div>
+    <div class="text-promax-cards">
+      <h5>Nuestra Seccion Pro Max:</h5>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-3 mb-3">
+              <div class="card animated-card" id="cards">
+                  <img src="assets/img/iphone 16promax.jpeg" class="card-img-top" alt="iPhone 16">
+                  <h5 class="card-title">iPhone 16 Pro Max</h5>
+              </div>
+          </div>
+          <div class="col-md-3 mb-3">
+              <div class="card animated-card" id="cards">
+                  <img src="assets/img/iphone 15promax.jpeg" class="card-img-top" alt="Apple Watch Series 10">
+                  <h5 class="card-title">iPhone 15 Pro Max</h5>
+              </div>
+          </div>
+          <div class="col-md-3 mb-3" id="cards">
+              <div class="card animated-card">
+                  <img src="assets/img/iphone 14promax.jpeg" class="card-img-top" alt="AirPods Max">
+                  <h5 class="card-title">iPhone 14 Pro Max</h5>
+              </div>
+          </div>
+          <div class="col-md-3 mb-3" id="cards">
+            <div class="card animated-card">
+                <img src="assets/img/iphone 13promax.jpeg" class="card-img-top" alt="AirPods Max">
+                <h5 class="card-title">iPhone 14 Pro Max</h5>
+            </div>
+        </div>
       </div>
-    </main>
+    </div>
+    <div class="text-promax-cards">
+      <h5>Nuestra Seccion MacBook:</h5>
+    </div>
+    <div class="container mt-5"></div>
+      <div class="row">
+          <div class="col-md-3 mb-3">
+              <div class="card animated-card" id="cards">
+                <img src="assets/img/Apple M1 MacBook Air.jpg" alt="Imagen 1" class="card-image">
+                <h3 class="card-title">MacBook Air M1</h3>
+              </div>
+          </div>
+          <div class="col-md-3 mb-3">
+              <div class="card animated-card" id="cards">
+                <img src="assets/img/Apple MacBook Air del2022.jpg" alt="Imagen 2" class="card-image">
+                <h3 class="card-title">MacBook Air del 2022</h3>
+              </div>
+          </div>
+          <div class="col-md-3 mb-3" id="cards">
+              <div class="card animated-card">
+                <img src="assets/img/Apple MacBook  pro 13.jpg" alt="Imagen 3" class="card-image">
+                <h3 class="card-title">MacBook Pro 13</h3>
+              </div>
+          </div>
+          <div class="col-md-3 mb-3" id="cards">
+            <div class="card animated-card">
+              <img src="assets/img/Apple MacBook  pro 16.jpg" alt="Imagen 3" class="card-image">
+              <h3 class="card-title">MacBook Pro</h3>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buscador-container">
+      <h5 class="buscar">Buscar más temas</h5>
+        <input type="text" placeholder="Buscar..." class="buscador-input">
+        <button class="buscador-boton">Buscar</button>
+    </div>
+  </nav>
+
+  <footer id="pie">
+    <ul class="icono-redes">
+        <li class="elemen-icono">
+            <a href="" class="icono">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+        </li>
+        <li class="elemen-icono">
+            <a href="" class="icono">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+        </li>
+        <li class="elemen-icono">
+            <a href="" class="icono">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </li>
+        <li class="elemen-icono">
+            <a href="" class="icono">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </li>
+
+    </ul>
+    <ul id="menu-pie">
+
+        <li class="elem-pie"><a href="#" class="info-pie">Home</a></li>
+        <li class="elem-pie"><a href="#" class="info-pie">Ipad</a></li>
+        <li class="elem-pie"><a href="#" class="info-pie">Watch</a></li>
+        <li class="elem-pie"><a href="#" class="info-pie">Donde comprar</a></li>
+
+    </ul>
+   <p id="copyright">© 2024 Apple Company. Todos los derechos reservados.  </p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

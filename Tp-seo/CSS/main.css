@@ -8,77 +8,31 @@ main{
     padding-right: 5%;
 }
 
-.video{
-    margin-top: 5%;
-    border-radius: 20px;
+.padding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#icono-boostrap{
+    display: flex;
+    float: right;
+    color: lightseagreen;
+    margin-right: 3%;
 }
 
 
-
-.buscador-container {
+.text-carrusel{
+    margin-top: 5%;
+    margin-bottom: 2%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(24, 146, 140, 0.507);
-    margin-top: 5%;
-    border-radius: 20px;
-    height: 250px;
+}
+.text-carrusel h5{
+    color: lightseagreen;
+    font-size: 30px;
 }
 
-.buscar{
-    color: white;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    font-size: 35px;
-}
-
-.buscador-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 50%;
-    height: 50px;
-}
-
-.buscador-boton {
-    margin-top: 2%;
-    padding: 10px 15px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color:lightseagreen ;
-    color: white;
-    cursor: pointer;
-    width: 50%;
-    transition: background-color 2s;
-}
-
-.buscador-boton:hover {
-    background-color: rgb(25, 133, 127);
-}
-
-@keyframes show{
-    from{
-        opacity: 0;
-        scale: 25%;
-    }
-    to {
-        opacity: 1;
-        scale: 100%;
-    }
-}
-
-iframe{
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
-    transition: width 3s;
-}
 
 .conteiner-ipad{
     margin-top: 5%;
@@ -88,7 +42,7 @@ iframe{
     background-repeat: no-repeat;
     z-index: -1;
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,14 +74,231 @@ iframe{
     color: white;
 }
 
-.text-carrusel{
+.video{
     margin-top: 5%;
-    margin-bottom: 2%;
+    border-radius: 20px;
+    margin-bottom: 10%;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+iframe{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: lightseagreen;
+}
+
+#cards img{
+    width: 80%;
+
+}
+
+.animated-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.animated-card:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.animated-card:hover .overlay {
+    opacity: 1;
+}
+
+
+.text-promax-cards h5{
+    margin-top: 7%;
+    margin-bottom: 2%;
+    color: lightseagreen;
+    font-size: 30px;
+}
+
+.card-container {
+    display: flex;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    margin-top: 2%;
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.buscador-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    border-radius: 20px;
+    height: 250px;
+}
+
+.buscar{
+    color: lightseagreen;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 35px;
+}
+
+.buscador-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+    height: 50px;
+}
+
+.buscador-boton {
+    margin-top: 2%;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:lightseagreen ;
+    color: white;
+    cursor: pointer;
+    width: 45%;
+    transition: background-color 2s;
+}
+
+.buscador-boton:hover {
+    background-color: rgb(25, 133, 127);
+}
+
+
+#pie{
+    padding-top: 2%;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.text-carrusel h5{
+
+#menu-pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    column-gap: 35%;
+}
+.elem-pie{
+    list-style: none;
+}
+
+.info-pie{
     color: lightseagreen;
-    font-size: 30px;
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: color 1s;
+}
+.info-pie:hover{
+    color:  black;
+}
+
+.icono-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.elemen-icono{
+    list-style: none;
+}
+
+.icono{
+    color: lightseagreen;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 20px;
+    transition: color 1s, transform 1s;
+}
+
+.icono:hover{
+    transform: translateY(-10px);
+    color:  black;
+}
+
+#copyright{
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: lightseagreen;
 }
