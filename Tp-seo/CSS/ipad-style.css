@@ -2,6 +2,12 @@ h1, h2 {
     text-align: center;
 }
 
+#icono-boostrap{
+    display: flex;
+    float: right;
+    color: lightseagreen;
+    margin-right: 3%;
+}
 
 #seccion-info .card {
     margin-bottom: 20px;
