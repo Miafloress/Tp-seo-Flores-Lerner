@@ -68,3 +68,22 @@ h1, h2 {
         padding: 15px;
     }
 }
+
+#pad-phone-img{
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+   
+}
+
+#pad-phone-img:hover{
+    transform: scale(1.05);
+}
+
+#pad-mac{
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+#pad-mac:hover{
+    transform: scale(1.05);
+}
